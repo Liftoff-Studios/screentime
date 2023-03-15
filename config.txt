@@ -1,0 +1,2 @@
+daily=240
+interval=20
