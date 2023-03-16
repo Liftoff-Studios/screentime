@@ -6,7 +6,7 @@ use std::thread;
 fn main()->std::io::Result<()>{
     //Get config file contents	
     let fc = fs::read_to_string("./config.txt")?;
-    
+
     //Get the current time using chrono
     let time = Local::now();
 
