@@ -6,10 +6,12 @@ use std::thread;
 fn main()->std::io::Result<()>{
     let fc = fs::read_to_string("./config.txt")?;
     let time = Local::now();
+
     //Variables
     let mut daily_limit: i32 = 0;
     let mut interval: i32 = 0;
     let mut time_done: i32 = 0;
+
     //Get Variables and times
     for (i, line) in fc.lines().enumerate(){
         if i==0{
@@ -48,6 +50,7 @@ fn main()->std::io::Result<()>{
                 .body("Your screen time is over, please stop looking at the screen")
                 .timeout(Timeout::Never) //milliseconds
                 .show().unwrap();
+		update_config(&interval, &daily_limit, &time_done);
         }
         else{
             Notification::new()
