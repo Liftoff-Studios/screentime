@@ -2,7 +2,7 @@ name: Rust static build macOS and Linux
 on:
   push:
     branches:
-      - main
+      - master
 jobs:
   build:
     name: build for all platforms
