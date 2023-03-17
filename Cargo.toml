@@ -14,3 +14,8 @@ timer = "0.2.0"
 opt-level = 'z' # Optimize for size
 lto = true
 codegen-units = 1
+
+# Setup for MacOS Compiling
+[target.x86_64-apple-darwin]
+linker = "x86_64-apple-darwin14-clang"
+ar = "x86_64-apple-darwin14-ar"
