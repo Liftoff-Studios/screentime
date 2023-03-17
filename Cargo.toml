@@ -9,3 +9,8 @@ edition = "2021"
 notify-rust = "4.8.0"
 chrono = "0.4.24"
 timer = "0.2.0"
+
+[profile.release]
+opt-level = 'z' # Optimize for size
+lto = true
+codegen-units = 1
