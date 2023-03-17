@@ -1,4 +1,4 @@
-# Instructions to Run Dev
+# Instructions to Run Dev 
 1. Have Rust and Cargo installed (their website provides a very easy setup procedere)
 2. Git clone the repo
 3. Open the terminal at the cloned Repo and run `cargo run`
